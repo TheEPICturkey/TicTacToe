@@ -27,3 +27,16 @@ Test: It will return the correct marker for the correct player
 Code: player1.getMarker();
 Expected: "Bai's marker is X"
 Result: "Bai's marker is X"
+
+Description: Game.prototype.addPlayer
+Test: It will add and save players to the game.
+Code: TicTacToe.addPlayer (player1)
+Expected: undefined
+Result: undefined
+
+Test: If three or more players are added, an error message will come back.
+Code: TicTacToe.addPlayer (player3)
+Expected: error: true,
+          message:"There can only be two players"
+Result: error: true,
+        message:"There can only be two players"

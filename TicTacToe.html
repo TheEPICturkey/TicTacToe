@@ -10,3 +10,27 @@
   <h1>Tic-Tac-Toe!</h1>
 
 </body>
+
+<canvas id="myCanvas" width="480" height="480" style="border:1px solid #d3d3d3;">
+    Your browser does not support the HTML canvas tag.
+    
+  <script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+
+    ctx.moveTo(160,0);
+    ctx.lineTo(160,480);
+    
+    ctx.moveTo(320,0);
+    ctx.lineTo(320,480);
+
+    ctx.moveTo(0,160);
+    ctx.lineTo(480,160);
+    
+    ctx.moveTo(0,320);
+    ctx.lineTo(480,320);
+  
+    ctx.stroke();
+  </script>
+</canvas>
+</html>
